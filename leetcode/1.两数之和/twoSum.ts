@@ -1,5 +1,5 @@
 // 两重 for
-const twoSum_1 = (nums: number[], target: number): number[] => {
+const twoSum1 = (nums: number[], target: number): number[] => {
     for (let i: number = 0; i < nums.length; i++) {
         for (let j: number = i + 1; j < nums.length; j++) {
             if (nums[i] + nums[j] === target) {
@@ -10,7 +10,7 @@ const twoSum_1 = (nums: number[], target: number): number[] => {
 }
 
 // map + for in
-const twoSum_2 = (nums: number[], target: number): number[] => {
+const twoSum2 = (nums: number[], target: number): number[] => {
     let map = new Map<number, number>()
 
     for (const key in nums) {
