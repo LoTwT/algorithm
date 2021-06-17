@@ -9,3 +9,4 @@
 - [9.回文数](./leetcode/9.回文数/isPalindrome.ts)
 - [13.罗马数字转整数](./leetcode/13.罗马数字转整数/romanToInt.ts)
 - [14.最长公共前缀](./leetcode/14.最长公共前缀/longestCommonPrefix.ts)
+- [20.有效的括号](./leetcode/20.有效的括号/isValidBracket.ts)
