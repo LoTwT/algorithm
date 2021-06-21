@@ -1,5 +1,5 @@
 /**
- * 线性表
+ * 线性表 - 无序表
  * 代码实现中，默认 JS 数组为定长数组
  * 并忽略 JS 数组自带功能, 采用更底层的方法进行实现
  * 1. 创建 —— 空 List
@@ -10,13 +10,13 @@
  * 6. 搜索
  */
 
-class List<T> {
+export default class List<T> {
     // 存储容器总长, 默认初始长度 10
-    private size: number = 10
+    protected size: number = 10
     // 已使用长度
-    private length: number = 0
+    protected length: number = 0
     // 存储数据的容器
-    private values = new Array<T>(10)
+    protected values = new Array<T>(10)
 
     /**
      * O(1)
