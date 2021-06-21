@@ -79,6 +79,7 @@ class List<T> {
     /**
      * O(n)
      * 删除指定位置的数据
+     * 删除之后, 修改 length 指向原先最后一位, 后续操作会直接操作这一位, 所以不用特意删除, 增加性能消耗
      * @param { number } index 
      */
     public remove(index: number): void {
@@ -88,8 +89,6 @@ class List<T> {
         for (let i = index + 1; i < this.length; i++) {
             this.values[i - 1] = this.values[i]
         }
-        // 删除原先最后一位
-        delete this.values[this.length - 1]
         // 处理长度
         this.length--
 
