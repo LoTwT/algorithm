@@ -78,6 +78,44 @@ class LinkedList<T> {
 
     /**
      * O(n)
+     * 删除指定位置的节点
+     * @param index 
+     */
+    public remove(index: number): void {
+        if (index === 0) { // 删第一个
+            if (this.head) this.head = this.head.next
+        } else {
+            let prevNode = this.findNthNode(index - 1)
+            if (!prevNode) return
+
+            let currentNod = prevNode.next
+            if (!currentNod) return
+
+            prevNode.next = currentNod.next
+        }
+        this.length -= 1
+    }
+
+    /**
+     * 查找节点是否在链表中
+     * @param value 
+     */
+    public search(value: T): number {
+        let currentNode = this.head
+        let i = 0
+
+        while (currentNode) {
+            if (currentNode.value === value) return i
+
+            currentNode = currentNode.next
+            i += 1
+        }
+
+        return -1
+    }
+
+    /**
+     * O(n)
      * 寻找尾节点
      * @returns 
      */
