@@ -1,7 +1,7 @@
 /**
  * 基于线性表的堆栈
  */
-class ListStack<T> {
+export default class ListStack<T> {
     private length: number = 0
     private size: number = 10
     private values = new Array<T>(10)
