@@ -1,12 +1,13 @@
-type LinkedListNode<T> = {
+export type LinkedListNode<T> = {
     value: T,
-    next: LinkedListNode<T> | null
+    next: LinkedListNode<T> | null,
+    prev?: LinkedListNode<T> | null,
 } | null
 
 /**
- * 链表
+ * 普通链表
  */
-class LinkedList<T> {
+export default class LinkedList<T> {
     private head: LinkedListNode<T> = null
     private length: number = 0
 
