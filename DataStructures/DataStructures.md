@@ -156,6 +156,7 @@ JS/TS 中主要体现为**泛型**。
 ## 树
 
 - [基础树](./Tree.ts)
+- [二叉查找树](./BinarySearchTree.ts)
 
 ### 二叉树
 
