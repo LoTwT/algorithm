@@ -1,5 +1,7 @@
 # 数据结构
 
+世上没有完美的数据结构，只有合适的数据结构。
+
 ---
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false} -->
