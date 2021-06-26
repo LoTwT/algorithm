@@ -10,6 +10,7 @@ class BinarySearchTree<T, U> {
     private root: BSTNode<T, U> | undefined = undefined
 
     /**
+     * O(log(n))
      * 插入节点
      * @param key 
      * @param value 
@@ -43,6 +44,7 @@ class BinarySearchTree<T, U> {
     }
 
     /**
+     * O(log(n))
      * 搜索节点
      * @param key 
      * @returns 
@@ -70,5 +72,24 @@ class BinarySearchTree<T, U> {
         } else {
             return searchNode(this.root)
         }
+    }
+
+    /**
+     * O(n)
+     * 中序遍历
+     * @param fn 
+     */
+    public walk(fn: (key: T, value: U) => void) {
+        const walkNode = (node: BSTNode<T, U> | undefined): void => {
+            if (node == undefined) return
+            else {
+                // 中序: 左 => 当前 => 右
+                walkNode(node.left)
+                fn(node.key, node.value)
+                walkNode(node.right)
+            }
+        }
+
+        walkNode(this.root)
     }
 }
