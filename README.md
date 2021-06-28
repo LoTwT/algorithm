@@ -16,3 +16,4 @@
 - [20.有效的括号](./leetcode/20.有效的括号/isValidBracket.ts)
 - [21.合并两个有序链表](./leetcode/21.合并两个有序链表/mergeTwoLists.ts)
 - [26.删除有序数组中的重复项](./leetcode/26.删除有序数组中的重复项/removeDuplicates.ts)
+- [26.删除有序数组中的重复项](./leetcode/27.移除元素/removeElement.ts)
